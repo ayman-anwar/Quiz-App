@@ -1,0 +1,78 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px; /* Add padding for better spacing */
+}
+
+/* .logo-container {
+  flex-shrink: 40; 
+}
+
+.logo {
+  height: 100px;
+} */
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.nav-link {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Content section styling */
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.welcome-section {
+  flex: 1;
+  text-align: left;
+}
+
+.welcome-text {
+  font-size: 70px;
+  margin-bottom: 5px;
+}
+
+.description-text {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.image-section {
+  flex: 1;
+  text-align: right;
+}
+
+.illustration {
+  max-width: 100%;
+  height: auto;
+}
