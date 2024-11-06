@@ -72,6 +72,50 @@ Each diagram has a specific role in modeling and understanding a system. Below i
 
 ---
 
-## Conclusion
 
-Each diagram plays a crucial role in visualizing different aspects of the system. Using a combination of these diagrams provides a comprehensive representation of the system’s design and behavior, aiding both technical and non-technical stakeholders in understanding how the system works.
+# Explanation of the Architecture Diagram
+
+This architecture diagram provides a streamlined, high-level view of the system's workflow and the interaction between its components. Below is an explanation of each component and its role in the legacy code migration process:
+
+## 1. User Interface
+- **Role**: Acts as the starting point where the user initiates the migration and receives feedback when the migration is complete.
+- **Interaction**: Sends a command to the Legacy Code Analysis module and receives a notification from the Production Environment upon successful migration.
+
+## 2. Legacy Code Analysis
+- **Role**: Analyzes the structure and semantics of the legacy code, extracting information such as entities, relationships, and functionalities.
+- **Output**: Provides the extracted data to the Dependency Graph Builder.
+
+## 3. Dependency Graph Builder
+- **Role**: Constructs a detailed graph representing dependencies and relationships within the legacy code.
+- **Output**: Passes the dependency graph to the Code Translation Engine.
+
+## 4. Code Translation Engine
+- **Role**: Utilizes techniques like Neural Machine Translation (NMT) to convert the legacy code into a modern language (e.g., C#, Java, Python).
+- **Output**: Sends the translated code to the Code Refactoring module.
+
+## 5. Code Refactoring
+- **Role**: Optimizes the translated code for improved readability, performance, and adherence to modern coding standards.
+- **Output**: Transfers the optimized code to the Adaptive Optimization module.
+
+## 6. Adaptive Optimization
+- **Role**: Continuously monitors and adjusts the code based on real-world usage, applying further optimizations to maintain high performance.
+- **Output**: Delivers the fully optimized code to the Deployment Manager.
+
+## 7. Deployment Manager
+- **Role**: Oversees the deployment of the optimized code to the production environment, ensuring it is ready for live use.
+- **Output**: Deploys the code to the Production Environment and notifies the User Interface of the successful migration.
+
+## 8. Production Environment
+- **Role**: Serves as the final destination for the migrated code, making it operational.
+- **Notification**: Sends a "migration complete" message back to the User Interface to inform the user.
+
+---
+
+## How to Explain It to the Panel
+
+1. **High-Level Workflow**: Begin by explaining that the architecture diagram outlines the main steps in the legacy code migration process, from initial analysis to deployment.
+
+2. **Step-by-Step Flow**: Walk through each module briefly, highlighting how data flows sequentially through the system. Emphasize the purpose of key modules, such as Legacy Code Analysis for extracting code semantics, Code Translation Engine for converting the code to a modern language, and Deployment Manager for handling the final deployment.
+
+3. **Final Outcome**: Conclude by explaining that the system provides a comprehensive solution for migrating legacy code, resulting in optimized, modern code ready for production, with a user notification system to confirm successful migration.
+
